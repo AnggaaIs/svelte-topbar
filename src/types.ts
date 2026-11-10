@@ -2,7 +2,7 @@ import type { Component } from 'svelte';
 
 /** Configuration options for the top loading bar. */
 export type SvelteTopLoaderProps = {
-  /** Bar and spinner color. @default `"#29d"` */
+  /** Bar and spinner color. @default `"#635bff"` */
   color?: string;
   /** Initial progress from 0 to 1. @default `0.08` */
   initialPosition?: number;

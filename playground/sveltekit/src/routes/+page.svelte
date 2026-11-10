@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { createTopLoader } from 'svelte-toploader';
+	import { createTopLoader } from 'svelte-topbar';
 
 	const loader = createTopLoader();
 	let loading = $state(false);

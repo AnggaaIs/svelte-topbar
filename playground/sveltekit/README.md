@@ -1,6 +1,6 @@
 # SvelteKit demo
 
-Minimal SvelteKit example using `svelte-toploader` and its optional navigation adapter.
+Minimal SvelteKit example using `svelte-topbar` and its optional navigation adapter.
 
 First, run `bun run build` from the package root. Then, from this directory:
 

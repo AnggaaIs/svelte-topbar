@@ -11,7 +11,7 @@ import * as NProgress from 'nprogress';
  * @example
  * ```svelte
  * <script lang="ts">
- *   import { trackSvelteKitNavigation } from 'svelte-toploader/sveltekit';
+ *   import { trackSvelteKitNavigation } from 'svelte-topbar/sveltekit';
  *   trackSvelteKitNavigation();
  * </script>
  *

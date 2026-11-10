@@ -1,4 +1,4 @@
-# svelte-toploader
+# svelte-topbar
 
 A tiny top loading bar for Svelte 5, powered by [`nprogress`](https://github.com/rstacruz/nprogress). Drop it in your app and get a progress bar for normal links, or control it yourself.
 
@@ -6,19 +6,19 @@ A tiny top loading bar for Svelte 5, powered by [`nprogress`](https://github.com
 
 ```bash
 # Bun
-bun add svelte-toploader
+bun add svelte-topbar
 
 # npm
-npm install svelte-toploader
+npm install svelte-topbar
 
 # pnpm
-pnpm add svelte-toploader
+pnpm add svelte-topbar
 
 # Yarn
-yarn add svelte-toploader
+yarn add svelte-topbar
 ```
 
-`nprogress` comes with the package, so you don't need to install it yourself. This package needs Svelte 5. The SvelteKit adapter is optional and only for SvelteKit apps.
+It's powered by NProgress, which is installed automatically as a dependency. No need to add it separately. This package needs Svelte 5; the SvelteKit adapter is optional.
 
 ## Usage
 
@@ -26,17 +26,17 @@ Add the component once near the top of your app. Same-origin links are tracked b
 
 ```svelte
 <script>
-  import TopLoader from 'svelte-toploader';
+  import TopLoader from 'svelte-topbar';
 </script>
 
-<TopLoader color="#29d" showSpinner={false} />
+<TopLoader color="#635bff" showSpinner={false} />
 ```
 
 ### Props
 
 | Prop                | Type              | Default            | Description                                                                                       |
 | ------------------- | ----------------- | ------------------ | ------------------------------------------------------------------------------------------------- |
-| `color`             | `string`          | `"#29d"`           | Bar and spinner color.                                                                            |
+| `color`             | `string`          | `"#635bff"`        | Bar and spinner color.                                                                            |
 | `initialPosition`   | `number`          | `0.08`             | Initial progress, from 0 to 1.                                                                    |
 | `crawlSpeed`        | `number`          | `200`              | Auto-increment interval in milliseconds.                                                          |
 | `height`            | `number`          | `3`                | Bar thickness in pixels.                                                                          |
@@ -56,7 +56,7 @@ Add the component once near the top of your app. Same-origin links are tracked b
 
 ```svelte
 <script lang="ts">
-  import { createTopLoader } from 'svelte-toploader';
+  import { createTopLoader } from 'svelte-topbar';
   const loader = createTopLoader();
 </script>
 
@@ -78,8 +78,8 @@ SvelteKit has navigation lifecycle callbacks (not a router hook). Add the option
 
 ```svelte
 <script lang="ts">
-  import TopLoader from 'svelte-toploader';
-  import { trackSvelteKitNavigation } from 'svelte-toploader/sveltekit';
+  import TopLoader from 'svelte-topbar';
+  import { trackSvelteKitNavigation } from 'svelte-topbar/sveltekit';
 
   trackSvelteKitNavigation();
 </script>
@@ -108,6 +108,6 @@ Only the generated `dist` files go into the published package. `prepack` builds 
 
 Example apps live in [`playground/`](./playground/): a minimal Svelte + Vite demo and a SvelteKit demo with the navigation adapter. Check the [playground README](./playground/README.md) for run steps.
 
-Found a bug or have an idea? [Open an issue](https://github.com/AnggaaIs/svelte-toploader/issues).
+Found a bug or have an idea? [Open an issue](https://github.com/AnggaaIs/svelte-topbar/issues).
 
 MIT © 2026 Angga Islami (AnggaaIs). See [LICENSE](./LICENSE).

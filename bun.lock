@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "svelte-toploader",
+      "name": "svelte-topbar",
       "dependencies": {
         "nprogress": "^0.2.0",
       },

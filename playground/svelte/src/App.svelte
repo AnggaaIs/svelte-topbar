@@ -1,5 +1,5 @@
 <script lang="ts">
-  import TopLoader, { createTopLoader } from "svelte-toploader";
+  import TopLoader, { createTopLoader } from "svelte-topbar";
 
   const loader = createTopLoader();
   let loading = $state(false);

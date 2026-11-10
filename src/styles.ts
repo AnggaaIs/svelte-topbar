@@ -2,7 +2,7 @@ import type { SvelteTopLoaderProps } from "./types";
 
 /** Build the global NProgress styles from component props. */
 export function createTopLoaderStyles({
-  color = "#29d",
+  color = "#635bff",
   height = 3,
   shadow,
   zIndex = 1600,

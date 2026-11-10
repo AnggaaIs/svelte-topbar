@@ -2,9 +2,9 @@ import { describe, expect, test } from 'bun:test';
 import { createTopLoaderStyles } from '../src/styles';
 
 describe('createTopLoaderStyles', () => {
-  test('uses default-position styles and the requested color', () => {
-    const css = createTopLoaderStyles({ color: '#ff0000' });
-    expect(css).toContain('background:#ff0000');
+  test('uses the default color and default-position styles', () => {
+    const css = createTopLoaderStyles({});
+    expect(css).toContain('background:#635bff');
     expect(css).toContain('top:0');
     expect(css).toContain('height:3px');
     expect(css).toContain('z-index:1600');

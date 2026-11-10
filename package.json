@@ -1,15 +1,15 @@
 {
-  "name": "svelte-toploader",
+  "name": "svelte-topbar",
   "version": "1.0.0",
   "description": "A Svelte top loading bar component powered by nprogress.",
   "author": "Angga Islami (AnggaaIs)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnggaaIs/svelte-toploader.git"
+    "url": "git+https://github.com/AnggaaIs/svelte-topbar.git"
   },
-  "homepage": "https://github.com/AnggaaIs/svelte-toploader#readme",
+  "homepage": "https://github.com/AnggaaIs/svelte-topbar#readme",
   "bugs": {
-    "url": "https://github.com/AnggaaIs/svelte-toploader/issues"
+    "url": "https://github.com/AnggaaIs/svelte-topbar/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -40,7 +40,7 @@
     "package:check": "bun pm pack --dry-run",
     "prepack": "bun run build"
   },
-  "keywords": ["svelte", "toploader", "nprogress", "progressbar"],
+  "keywords": ["svelte", "svelte-topbar", "topbar", "toploader", "nprogress", "progressbar"],
   "license": "MIT",
   "peerDependencies": {
     "svelte": "^5.0.0",

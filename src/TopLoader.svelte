@@ -5,7 +5,7 @@
   import { createTopLoaderStyles } from "./styles";
 
   let {
-    color = "#29d",
+    color = "#635bff",
     initialPosition = 0.08,
     crawlSpeed = 200,
     height = 3,

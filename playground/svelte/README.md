@@ -1,6 +1,6 @@
 # Svelte demo
 
-Minimal Svelte + Vite example using `svelte-toploader`.
+Minimal Svelte + Vite example using `svelte-topbar`.
 
 First, run `bun run build` from the package root. Then, from this directory:
 
