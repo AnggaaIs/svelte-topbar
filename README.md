@@ -108,4 +108,6 @@ Only the generated `dist` files go into the published package. `prepack` builds 
 
 Example apps live in [`playground/`](./playground/): a minimal Svelte + Vite demo and a SvelteKit demo with the navigation adapter. Check the [playground README](./playground/README.md) for run steps.
 
+Found a bug or have an idea? [Open an issue](https://github.com/AnggaaIs/svelte-toploader/issues).
+
 MIT © 2026 Angga Islami (AnggaaIs). See [LICENSE](./LICENSE).
