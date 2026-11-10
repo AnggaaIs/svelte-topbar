@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify package and demos
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: .bun-version
+
+      - name: Install package dependencies
+        run: bun ci
+
+      - name: Run unit tests
+        run: bun run test
+
+      - name: Build package and check publish contents
+        run: bun run package:check
+
+      - name: Install Svelte demo dependencies
+        working-directory: playground/svelte
+        run: bun ci
+
+      - name: Check Svelte demo
+        working-directory: playground/svelte
+        run: bun run check
+
+      - name: Build Svelte demo
+        working-directory: playground/svelte
+        run: bun run build
+
+      - name: Install SvelteKit demo dependencies
+        working-directory: playground/sveltekit
+        run: bun ci
+
+      - name: Check SvelteKit demo
+        working-directory: playground/sveltekit
+        run: bun run check
+
+      - name: Build SvelteKit demo
+        working-directory: playground/sveltekit
+        run: bun run build

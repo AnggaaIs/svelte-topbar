@@ -1,0 +1,65 @@
+{
+  "name": "svelte-toploader",
+  "version": "1.0.0",
+  "description": "A Svelte top loading bar component powered by nprogress.",
+  "author": "Angga Islami (AnggaaIs)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnggaaIs/svelte-toploader.git"
+  },
+  "homepage": "https://github.com/AnggaaIs/svelte-toploader#readme",
+  "bugs": {
+    "url": "https://github.com/AnggaaIs/svelte-toploader/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": ["**/*.css"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./sveltekit": {
+      "types": "./dist/sveltekit.d.ts",
+      "import": "./dist/sveltekit.js",
+      "default": "./dist/sveltekit.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "bun test",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "package": "svelte-package -i src",
+    "build": "bun run check && bun run package",
+    "package:check": "bun pm pack --dry-run",
+    "prepack": "bun run build"
+  },
+  "keywords": ["svelte", "toploader", "nprogress", "progressbar"],
+  "license": "MIT",
+  "peerDependencies": {
+    "svelte": "^5.0.0",
+    "@sveltejs/kit": "^2.0.0 || ^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@sveltejs/kit": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "nprogress": "^0.2.0"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "^3.2.0",
+    "@sveltejs/package": "^3.0.2",
+    "@types/nprogress": "^0.2.3",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
