@@ -1,6 +1,6 @@
 {
   "name": "svelte-topbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Svelte top loading bar component powered by nprogress.",
   "author": "Angga Islami (AnggaaIs)",
   "repository": {
@@ -31,7 +31,7 @@
       "default": "./dist/sveltekit.js"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": ["dist", "README.md", "CHANGELOG.md", "LICENSE"],
   "scripts": {
     "test": "bun test",
     "check": "svelte-check --tsconfig ./tsconfig.json",
